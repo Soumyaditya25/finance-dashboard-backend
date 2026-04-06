@@ -23,5 +23,4 @@ services:
 databases:
   - name: finance-dashboard-db
     databaseName: finance_dashboard
-    user: postgres
     plan: free
