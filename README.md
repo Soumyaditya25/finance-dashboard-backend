@@ -1,6 +1,6 @@
 # Finance Dashboard Backend
 
-A RESTful API backend for role-based management of financial records and dashboard analytics, built as an internship screening assignment for Zorvyn.
+A robust RESTful API backend for role-based management of financial records and advanced dashboard analytics.
 
 ---
 
