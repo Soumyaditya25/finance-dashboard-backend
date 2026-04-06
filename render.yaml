@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: finance-dashboard-backend
+    env: node
+    buildCommand: npm install && npx prisma generate && npm run build
+    startCommand: npm run prisma:deploy && npm start
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: finance-dashboard-db
+          property: connectionString
+      - key: NODE_ENV
+        value: production
+      - key: CORS_ORIGIN
+        value: "https://your-frontend-url.com" 
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: "24h"
+      - key: BCRYPT_ROUNDS
+        value: "10"
+
+databases:
+  - name: finance-dashboard-db
+    databaseName: finance_dashboard
+    user: postgres
+    plan: free
