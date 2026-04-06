@@ -1,5 +1,8 @@
 # Finance Dashboard Backend
 
+> **Live API:** `https://finance-dashboard-backend-h560.onrender.com`  
+> **Swagger API Docs:** `https://finance-dashboard-backend-h560.onrender.com/api-docs`
+
 A robust RESTful API backend for role-based management of financial records and advanced dashboard analytics.
 
 ---

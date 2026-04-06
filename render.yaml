@@ -3,7 +3,7 @@ services:
     name: finance-dashboard-backend
     plan: free
     env: node
-    buildCommand: npm install && npx prisma generate && npm run build
+    buildCommand: npm install --include=dev && npx prisma generate && npm run build
     startCommand: npm run prisma:deploy && npm start
     envVars:
       - key: DATABASE_URL
